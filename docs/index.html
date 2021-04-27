@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="I'm a developer based in Bologna (IT) interested in Web Developing, Machine Learning, Computer Vision, Intelligent Systems and Robotics"/> <!-- 150 chars -->
+    <meta property="og:title" content="Ugo Leone Cavalcanti"/>
+    <meta property="og:description" content="I'm a developer based in Bologna (IT) interested in Web Developing, Machine Learning, Computer Vision, Intelligent Systems, Robotics and Digital Arts. I love using micro-controllers and FPGA but altro javascript and distributed systems."/> <!-- 300 chars -->
+    <meta property="og:site_name" content="Ugo Leone Cavalcanti - Software Developer"/>
+    <meta property="og:locale" content="it_IT"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://ugoleone.github.io/ugoLeone/"/>
+    <meta property="og:image:secure_url" itemprop="image" content="https://ugoleone.github.io/ugoLeone/imgs/ogUgo.png"/>
+
+    <link rel="icon" type="image/png" href="imgs/favicon.png">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.js"></script>
+    <script src="js/main.js"></script>
+    <title>Ugo Leone</title>
+</head>
+<body>
+    
+    <!--HOME-->
+    <section>
+        <div class="homeLeft">
+            <div>
+                <div id="innerMiniGame" class="innerMinigame"></div>
+                <h3 class="pongText">&#60; use mouse to move &#62;</h3>
+            </div>
+        </div>
+        <div class="homeRight">
+            <div>
+                <h1 class="homeName">Ugo Leone<br/>Cavalcanti</h1>
+                <h2 class="homeSubName">// Computer Engineering Student</h2>
+            </div>
+        </div>
+        <div class="homeLeftMobile">
+            <div>
+                <div class="innerMinigame" id="innerMiniGameMobile"></div>
+                <h3 class="pongText">&#60; use finger to move &#62;</h3>
+                <h3 class="pongText blinking" id="scrollToggler" style="margin-top: 3vh" onclick="scrollToggle()">[ PRESS TO ENTER ]</h3>
+            </div>
+        </div>
+        <h2 class="downArrow blinking" onclick="arrowPressed()">&#62;</h2>
+        <script src="js/pong.js"></script>
+    </section>
+
+    <!--ABOUT-->
+   <section id="about">
+        <div class="aboutLeft1">
+            <div>
+                <pre class="aboutText" data-aos="zoom-out-right">
+<span class="bolder">About()</span> {
+
+    I'm a developer based in Bologna (IT) with a strong
+    passion for coding, electronics, music, photography
+    and (obviously) DIY.
+    I always try to interconnect different areas of knowledge 
+    with each other, in order to explore new directions.
+    In fact, I am constantly looking for new "projects to 
+    carry out" to test and expand my skills.  
+
+}               </pre>
+            </div>
+        </div>
+        <div class="aboutRight">
+            <div>
+                <img class="innerImg" src="imgs/asciUgo.png" alt="ugoFotoAscii" data-aos="zoom-out-left">
+            </div>
+        </div>
+        <div class="aboutLeft2">
+            <div>
+                <pre class="aboutText" data-aos="zoom-out-right" style="width: 50vw;">
+
+
+<span class="bolder">/*</span>
+<span class="bolder"> *</span>
+<span class="bolder"> *</span>  Contact me @
+<span class="bolder"> *</span>  <a href="MAILTO:ugoleone.cavalcanti@gmail.com">ugoleone.cavalcanti [at] gmail.com</a>
+<span class="bolder"> *</span>
+<span class="bolder"> */</span>
+                </pre>
+                <pre class="aboutText" data-aos="zoom-out-right" style="display: none;">
+
+<span class="bolder">Network ()</span> {
+    
+    Regardless of the complexity of a project, it is essential 
+    to have a good team, whose members have the different
+    skills needed.
+    
+    <a href="#">linkNetwork1.com</a>   <a href="#">linkNetwork2.com</a>
+    <a href="#">linkNetwork3.com</a>   <a href="#">linkNetwork4.com</a>
+
+}
+                </pre>
+            </div>
+        </div>
+    </section>
+
+     <!--INTERESTS-->
+    <section>
+        <h2 class="interestIntro" data-aos="" data-aos-id="terminal-intro">Ugo@<span id="timeStamp" class="interestIntro" style="padding-left: 0;">Mon, 26 Apr 2021 13:54:35 GMT</span> $ <span id="tipeWriter" class="interestIntro" style="padding-left: 0;"></span> <span class="interestIntro blinking" style="padding-left: 0;">&#219;</span></h2>
+        <div class="interestLeft">
+            <div>
+                <div class="interestContainer" data-aos="zoom-in">
+                    <h3>[0] :: Web Developing</h3>
+                    <br/>
+                    <p>
+                        I had the opportunity to create projects with Wordpress or Shopify and 
+                        some web applications built from scratch with React on a AWS backend.
+                        I made some distributed systems, with JavaEE, too. 
+                        Working with both REST and GraphQL API. At the moment I am particularly 
+                        concentrated in this area.
+                    </p>
+                    <br/>
+                    <h3>/* Javascript $ Amplify $ React $ App */</h3>
+                </div>
+                <div class="interestContainer" data-aos="zoom-in">
+                    <h3>[1] :: Embedded Systems</h3>
+                    <br/>
+                    <p>
+                        I made several microcontroller-based projects (Arduino, STM32) and also a 
+                        <a href="https://github.com/ugoleone/zedboard_image_processing_pipeline">video processing pipeline based on FPGA</a>.
+                        In particular, I am very interested in SoCs.
+                    </p>
+                    <br/>
+                    <h3>/* Xilinx $ FPGA $ STM32 $ OpenCV */</h3>
+                </div>
+                <div class="interestContainer" data-aos="zoom-in">
+                    <h3>[2] :: Robotics</h3>
+                    <br/>
+                    <p>
+                        I did some robotics projects, such as quadcopters or self-driving RVs. 
+                        In particular, with N. Romandini and A. Al Sadi, we have created a <a href="https://ugoleone.github.io/iss2020TemaFinale/">robot capable 
+                        of managing a tea room.</a>
+                    </p>
+                    <br/>
+                    <h3>/* Lorem $ Ipsum $ Dolor $ Sit */</h3>
+                </div>
+            </div>
+        </div>
+        <div class="interestRight">
+            <div>
+                <div class="interestContainer" data-aos="zoom-in">
+                    <h3>[3] :: Intelligent Systems</h3>
+                    <br/>
+                    <p>
+                        Together with N. Romandini I made an <a href="https://github.com/nickromandini/TablutPlayer">agent capable 
+                        of playing the board game Tablut</a>. I am currently interested in deep neural networks.
+                    </p>
+                    <br/>
+                    <h3>/* Autonomus Systems $ AI $ Deep Learning */</h3>
+                </div>
+                <div class="interestContainer" data-aos="zoom-in">
+                    <h3>[4] :: Audiovisual Experiences</h3>
+                    <br/>
+                    <p>
+                        I am one of the founders of the association <a href="https://beyondcommonideas.org">Beyond Common Ideas</a> 
+                        focused in electronic music, visual arts and social impact of underground club culture. 
+                        We developed software and hardware solutions for several interactive audiovisual 
+                        performances and installations.
+                    </p>
+                    <br/>
+                    <h3>/* DJing $ Video Mapping $ Light Design $ DMX */</h3>
+                </div>
+                <div class="interestContainer" data-aos="zoom-in">
+                    <h3>[5] :: Video Making</h3>
+                    <br/>
+                    <p>
+                        I made a short film, "Come al Solito" (2013), presented at Phoenix Film Festival 2014 
+                        (awarded Best short film), Visioni Corte 2013 (won) and Sardinia Film Festival 2013 (1st in school category).
+                    </p>
+                    <br/>
+                    <h3>/* ShortFilm $ Acting $ Photography */</h3>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <footer>
+        <h2 class="footerText">Copyright &#169; 2021 Ugo Leone Cavalcanti</h2>  
+    </footer>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+</body>
+</html>
