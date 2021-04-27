@@ -189,6 +189,9 @@ section {
 .innerImg {
     width: 45vw;
 }
+.aboutContacts {
+    width: 50vw;
+}
 
 @media (max-width: 790px) {
     .aboutLeft1,
@@ -207,6 +210,9 @@ section {
     }
     .innerImg {
         width: 80vw;
+    }
+    .aboutContacts {
+        width: 100vw;
     }
 }
 
