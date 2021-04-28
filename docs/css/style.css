@@ -288,7 +288,8 @@ section {
 .touched {
     background-color: var(--mainTXT);
 }
-.touched h3, 
+.touched h3,
+.touched h4,
 .touched p,
 .touched a {
     color: var(--mainBG);
@@ -300,6 +301,9 @@ section {
     .interestContainer h3 {
         font-size: 0.8rem;
     }
+    .interestContainer h4 {
+        font-size: 0.7rem;
+    }
     .interestContainer p {
         font-size: 0.6rem;
     }
@@ -308,7 +312,8 @@ section {
     .interestContainer:hover {
         background-color: var(--mainTXT);
     }
-    .interestContainer:hover h3, 
+    .interestContainer:hover h3,
+    .interestContainer:hover h4,
     .interestContainer:hover p,
     .interestContainer:hover a {
         color: var(--mainBG);
