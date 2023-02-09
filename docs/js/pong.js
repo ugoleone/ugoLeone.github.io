@@ -32,9 +32,14 @@ class Ball {
             this.velocity.y *= -1;
         }
     }
-
+    //&& (this.position.x >= target.position.x) 
+    //&& (this.position.x <= target.position.x+target.w)
     checkTargetCollision(target) {
-        if (target.show && (this.position.y - this.r < (target.position.y + target.h)) && (this.position.x >= target.position.x) && (this.position.x <= target.position.x+target.w)) {
+        if (target.show 
+                && (this.position.y - this.r < (target.position.y + target.h)) 
+                && (this.position.x + this.r >= target.position.x || this.position.x - this.r >= target.position.x) 
+                && (this.position.x - this.r <= target.position.x+target.w || this.position.x + this.r <= target.position.x+target.w)
+            ) {
             this.position.y = target.position.y + target.h + this.r;
             this.velocity.y *= -1;
             target.show = false;
